@@ -1,0 +1,37 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 615px;
+    height: 615px;
+}
+
+.grid div {
+    width: 203px;
+    height: 203px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.PlayerX {
+    background: linear-gradient(to bottom right, transparent calc(50% - 10px / 2), #020000 calc(30% - 10px / 2) calc(50% + 10px / 2), transparent calc(30% + 10px / 2)),
+        linear-gradient(to bottom left, transparent calc(50% - 10px / 2), #000000 calc(30% - 10px / 2) calc(50% + 10px / 2), transparent calc(30% + 10px / 2));
+    background-size: 40% 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.PlayerO {
+    background: radial-gradient(rgb(119, 1, 1) 45%, transparent 45%);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reset {
+    display: flex;
+    margin: 1.5em auto;
+    font-size: 1.5em;
+}
